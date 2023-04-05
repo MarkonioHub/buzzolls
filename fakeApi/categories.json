@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Сеты",
+    "slug": "sets",
+    "productsId": [1,2,3],
+    "parentCategory": null
+  },
+  {
+    "name": "Из жареных роллов",
+    "slug": "z-zharenykh-rollov",
+    "productsId": [1,2,3],
+    "parentCategory": "sets"
+  }
+]
