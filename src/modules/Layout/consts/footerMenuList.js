@@ -1,4 +1,4 @@
-export const menuList = [
+export const footerMenuList = [
     { text: 'Главная', link: '/' },
     { text: 'Меню', link: '/' },
     { text: 'Акции', link: '/' },

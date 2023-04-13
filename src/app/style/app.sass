@@ -1,0 +1,62 @@
+*
+  margin: 0
+  outline: none
+  box-sizing: border-box
+  padding: 0
+  font-family: 'AFuturaRound', sans-serif
+  font-size: 16px
+
+html
+  scroll-behavior: smooth
+
+body
+  display: flex
+  flex-direction: column
+  min-width: 320px
+  min-height: 100vh
+  overflow-y: scroll
+  background-color: white
+  color: #282828
+
+picture
+  display: block
+
+img
+  display: block
+  width: 100%
+  height: auto
+
+li
+  list-style-type: none
+
+a
+  color: inherit
+  cursor: pointer
+  text-decoration: none
+
+button
+  user-select: none
+  cursor: pointer
+  background-color: transparent
+  border: none
+
+#root
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+.cont
+  margin: 0 auto
+  max-width: 1188px + 30px
+  padding-right: 15px
+  padding-left: 15px
+  @media screen and (max-width: 1240px)
+    max-width: 852px + 30px
+  @media screen and (max-width: 950px)
+    max-width: 648px + 30px
+  @media screen and (max-width: 700px)
+    max-width: 468px + 30px
+  @media screen and (max-width: 520px)
+    padding-right: 20px
+    padding-left: 20px
+    max-width: 392px + 40px

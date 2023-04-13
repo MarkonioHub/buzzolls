@@ -1,0 +1,58 @@
+.header-top
+  margin-bottom: 5px
+  padding: 5px 0
+
+.header-top__cont
+
+.header-top__area
+  display: flex
+  align-items: center
+
+.header-top__city
+  margin-right: 20px
+
+.header-top__city-span
+  color: #737373
+  font-weight: 400
+  display: inline
+  @media screen and (max-width: 950px)
+    display: none
+
+.header-top__city-name
+  color: #f5551e
+  font-weight: 700
+
+.header-top__phone
+  margin-left: auto
+  font-weight: 700
+
+.header-top__work-time
+  margin-left: 20px
+  @media screen and (max-width: 950px)
+    display: none
+
+.header-top__sign-in
+  margin-left: 20px
+  display: flex
+  align-items: center
+  cursor: pointer
+  &:hover
+    .header-top__sign-in-icon
+      background-image: url("./images/sign-in-icon_orange.svg")
+    .header-top__sign-in-span
+      color: #f5551e
+
+.header-top__sign-in-icon
+  width: 23px
+  height: 23px
+  background-size: cover
+  background-repeat: no-repeat
+  background-image: url("./images/sign-in-icon.svg")
+  transition-property: background-image
+  transition-duration: 0.3s
+
+.header-top__sign-in-span
+  transition-property: color
+  transition-duration: 0.3s
+  @media screen and (max-width: 950px)
+    display: none

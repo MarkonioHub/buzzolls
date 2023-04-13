@@ -1,0 +1,81 @@
+.header
+  box-shadow: 0 2px 4px -2px #ccc
+  position: sticky
+  top: 0
+  z-index: 2
+  background-color: #fff
+
+.header__cont
+
+.header__area
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @media screen and (max-width: 1240px)
+    justify-content: normal
+
+.header__logo
+  display: flex
+  padding-bottom: 10px
+  align-items: flex-end
+
+.header__logo-icon
+  width: 60px
+  height: 60px
+
+.header__logo-text
+  margin-left: 15px
+  width: 130px
+  height: 40px
+  margin-top: 13px
+  @media screen and (max-width: 950px)
+    display: none
+
+.header__menu
+  display: flex
+  justify-content: space-evenly
+  flex-grow: 1
+  @media screen and (max-width: 1240px)
+    display: none
+
+.header__menu-link
+  font-size: 19px
+  text-transform: uppercase
+  font-weight: 700
+
+.header__basket
+  display: flex
+  align-items: center
+  background-color: #f5551e
+  color: #fff
+  border-radius: 4px
+  padding: 8px 0 8px 8px
+  @media screen and (max-width: 1240px)
+    margin-left: auto
+
+.header__basket-image
+  width: 28px
+  height: 28px
+
+.header__basket-price
+  padding: 0 12px
+  font-size: 19px
+
+.header__burger
+  display: none
+  margin-left: 20px
+  width: 32px
+  height: 32px
+  @media screen and (max-width: 1240px)
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+  &::before, &::after
+    @media screen and (max-width: 1240px)
+      content: ""
+      height: 4px
+      background-color: #737373
+
+.header__burger-line
+  height: 4px
+  background-color: #737373

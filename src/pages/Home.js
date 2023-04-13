@@ -1,13 +1,11 @@
-import React from 'react';
-import { Header } from "../modules/Header/index";
-import { Footer } from "../modules/Footer/index";
+import React from "react";
+import { Layout } from "../modules/Layout/index";
 
 const Home = () => {
     return (
-        <div>
-            <Header/>
-            <Footer/>
-        </div>
+        <Layout>
+           <h1>huipI!!!</h1>
+        </Layout>
     );
 };
 
