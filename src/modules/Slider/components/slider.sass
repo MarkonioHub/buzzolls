@@ -1,0 +1,75 @@
+.slider
+
+.slider__wrap
+  position: relative
+
+.slider__cont
+  position: absolute
+  z-index: 1
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+
+.slider__nav
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+
+.slider__nav_left
+  left: 0
+  transform: translateY(-50%) rotate(180deg)
+
+.slider__nav_right
+  right: 0
+
+.slider__nav-icon
+  width: 32px
+  height: 60px
+
+.slider__pagination
+  display: flex
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  bottom: 0
+
+.slider__pagination-button
+  padding: 10px
+
+.slider__pagination-button_active
+  .slider__pagination-icon
+    background-image: url("../images/ic_pagination_circle_fill.svg")
+
+.slider__pagination-icon
+  width: 10px
+  height: 10px
+  background-image: url("../images/ic_pagination_circle.svg")
+  border-radius: 50%
+  background-size: cover
+
+.slider__list
+  position: relative
+  overflow: hidden
+  padding-bottom: 25.625%
+  @media screen and (max-width: 1024px)
+    padding-bottom: 34.18%
+  @media screen and (max-width: 768px)
+    padding-bottom: 44.375%
+
+.slider__picture
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  opacity: 0
+  transition-property: opacity
+  transition-duration: 1s
+
+.slider__picture_active
+  opacity: 1
+
+.slider__image
+  height: 100%
+  object-fit: cover

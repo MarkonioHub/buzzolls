@@ -19,7 +19,7 @@ export const Footer = () => {
                 <div className="footer__area">
                     <div className="footer__list">
                         {footerMenuList.map(item =>
-                            <a href={item.link} key={item.text} className="footer__link">{item.text}</a>
+                            <Link to={item.link} key={item.text} className="footer__link link-orange">{item.text}</Link>
                         )}
                     </div>
                     <div className="footer__localities">
@@ -35,15 +35,15 @@ export const Footer = () => {
                         <h3 className="footer__title">Контакты</h3>
                         <div className="footer__contacts-box">
                             <div className="footer__contacts-name">Горячая линия:</div>
-                            <a href="tel:8(833)2699690" className="footer__contacts-value">8 (833) 269 96 90</a>
+                            <a href="tel:8(833)2699690" className="footer__contacts-value link-orange">8 (833) 269 96 90</a>
                         </div>
                         <div className="footer__contacts-box">
                             <div className="footer__contacts-name">Вопросы и предложения:</div>
-                            <a href="mailto:feedback@buzzolls.ru" className="footer__contacts-value">feedback@buzzolls.ru</a>
+                            <a href="mailto:feedback@buzzolls.ru" className="footer__contacts-value link-orange">feedback@buzzolls.ru</a>
                         </div>
                         <div className="footer__contacts-box">
                             <div className="footer__contacts-name">Сотрудничество:</div>
-                            <a href="mailto:director@buzzolls.ru" className="footer__contacts-value">director@buzzolls.ru</a>
+                            <a href="mailto:director@buzzolls.ru" className="footer__contacts-value link-orange">director@buzzolls.ru</a>
                         </div>
                     </div>
                 </div>

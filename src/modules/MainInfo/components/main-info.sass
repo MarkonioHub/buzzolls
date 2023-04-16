@@ -1,0 +1,51 @@
+.main-info
+  padding-top: 20px
+  padding-bottom: 20px
+
+.main-info__cont
+
+.main-info__area
+  position: relative
+  overflow: hidden
+  height: 400px
+  &::before
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    content: ""
+    height: 250px
+    background: linear-gradient(180deg,hsla(0,0%,100%,0) 0,#fff)
+  &_show
+    margin-bottom: 10px
+    height: auto
+    &::before
+      content: none
+
+.main-info__button-box
+  display: flex
+  justify-content: center
+
+.main-info__button
+
+.content
+  color: #737373
+  h3
+    margin-bottom: 10px
+    text-transform: uppercase
+    letter-spacing: 1.15px
+    font-size: 22px
+    color: #000
+    @media screen and (max-width: 1240px)
+      font-size: 19px
+  p
+    margin-bottom: 10px
+
+  ul
+    margin-bottom: 10px
+    padding-left: 40px
+    @media screen and (max-width: 1240px)
+      padding-left: 20px
+
+  li
+    list-style: circle

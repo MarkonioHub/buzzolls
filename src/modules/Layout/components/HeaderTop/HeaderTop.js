@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { getLocalities } from '../../api/localities'
 import './header-top.sass'
+import {Link} from "react-router-dom";
 
 export const HeaderTop = () => {
     const [localities, setLocalities] = useState([])
@@ -23,12 +24,12 @@ export const HeaderTop = () => {
                     </div>
                     <a href={`tel:${localities[0]?.phone}`} className="header-top__phone fc_grey link-orange">8 (833) 269 96 90</a>
                     <div className="header-top__work-time fc_grey">ежедневно с 10:00 до 23:00</div>
-                    <div className="header-top__sign-in">
+                    <Link to={"/"} className="header-top__sign-in">
                         <div className="header-top__sign-in-icon"></div>
                         <span className="header-top__sign-in-span fc_grey">
                             Регистрация/Вход
                         </span>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,18 +1,28 @@
 .footer
   margin-top: auto
   background-color: #f0f0f0
+  overflow: hidden
 
 .footer__cont
 
 .footer__area
+  position: relative
   display: flex
   justify-content: space-between
-  border-bottom: 1px solid #737373
   padding: 60px 0 40px
   @media screen and (max-width: 1240px)
     padding: 20px 0 20px
   @media screen and (max-width: 520px)
     flex-wrap: wrap
+  &::before
+    content: ""
+    height: 1px
+    background-color: #737373
+    position: absolute
+    bottom: 0
+    left: 50%
+    width: 100vw
+    transform: translateX(-50%)
 
 .footer__list
   max-width: 390px
@@ -76,7 +86,7 @@
     font-size: 16px
 
 .footer__bottom
-  padding: 20px 0
+  padding: 30px 0
   display: flex
   justify-content: space-between
   align-items: center
