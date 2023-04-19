@@ -1,9 +1,9 @@
 import React from 'react';
 
-import advantages_1 from "../images/advantages_1.png"
-import advantages_2 from "../images/advantages_2.png"
-import advantages_3 from "../images/advantages_3.png"
-import advantages_4 from "../images/advantages_4.png"
+import advantages_1 from "../../images/advantages_1.png"
+import advantages_2 from "../../images/advantages_2.png"
+import advantages_3 from "../../images/advantages_3.png"
+import advantages_4 from "../../images/advantages_4.png"
 
 import "./advantages.sass"
 

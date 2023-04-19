@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import ButtonOrange from '../../../../UI/buttons/ButtonOrange/ButtonOrange'
 
 import "./main-info.sass"
 
@@ -86,9 +87,11 @@ export const MainInfoComp = () => {
                     </div>
                 </div>
                 <div className="main-info__button-box">
-                    <button className="main-info__button btn-orange" onClick={() => setContentShow(!contentShow)}>
-                        {contentShow ? "Скрыть текст" : "Показать текст"}
-                    </button>
+                    <ButtonOrange
+                        text={contentShow ? "Скрыть текст" : "Показать текст"}
+                        onClick={() => setContentShow(!contentShow)}
+                    >
+                    </ButtonOrange>
                 </div>
             </div>
         </section>

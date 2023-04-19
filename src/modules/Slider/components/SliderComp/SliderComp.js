@@ -1,6 +1,6 @@
 import React, {useCallback, useEffect, useState} from 'react';
 
-import ic_slider_right_white from "../images/ic_slider_right_white.svg"
+import ic_slider_right_white from "../../images/ic_slider_right_white.svg"
 
 import "./slider.sass"
 
