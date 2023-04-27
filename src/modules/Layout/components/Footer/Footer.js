@@ -1,6 +1,7 @@
 import React from 'react';
 import { footerMenuList } from "../../consts/footerMenuList";
 import {Link} from "react-router-dom";
+import {isObjectEmpty} from "../../../../helpers/isObjectEmpty"
 
 import logoText from "../../images/logo_text.svg";
 import icIn from "../../images/ic_in.svg";
@@ -10,43 +11,50 @@ import icGooglePlay from "../../images/ic_google_play.svg";
 import icAppStore from "../../images/ic_app_store.svg";
 
 import "./footer.sass"
+import {useSelector} from "react-redux";
 
 export const Footer = () => {
-    const addresses = ['Ленина, 205','Строителей, 1А','Мостовицкая, 9','Профсоюзная, 34','Торфяная, 7']
+    const currentLocality = useSelector(state => state.localities.currentLocality)
+    const restaurants = useSelector(state => state.restaurants.restaurants)
+
     return (
         <footer className="footer">
             <div className="footer__cont cont">
-                <div className="footer__area">
-                    <div className="footer__list">
-                        {footerMenuList.map(item =>
-                            <Link to={item.link} key={item.text} className="footer__link link-orange">{item.text}</Link>
-                        )}
-                    </div>
-                    <div className="footer__localities">
-                        <div className="footer__title">Киров</div>
-                        <ul className="footer__locality-list">
-                            {addresses.map((item, i) =>
-                                <li key={i} className="footer__locality-item">{item}</li>
+                {!isObjectEmpty(currentLocality) ?
+                    <div className="footer__area">
+                        <div className="footer__list">
+                            {footerMenuList.map(item =>
+                                <Link to={item.link} key={item.text} className="footer__link link-orange">{item.text}</Link>
                             )}
+                        </div>
+                        <div className="footer__localities">
+                            <div className="footer__title">Киров</div>
+                            <ul className="footer__locality-list">
+                                {restaurants.map((item, i) =>
+                                    <li key={i} className="footer__locality-item">{item.address}</li>
+                                )}
 
-                        </ul>
+                            </ul>
+                        </div>
+                        <div className="footer__contacts">
+                            <h3 className="footer__title">Контакты</h3>
+                            <div className="footer__contacts-box">
+                                <div className="footer__contacts-name">Горячая линия:</div>
+                                <a href="tel:8(833)2699690" className="footer__contacts-value link-orange">8 (833) 269 96 90</a>
+                            </div>
+                            <div className="footer__contacts-box">
+                                <div className="footer__contacts-name">Вопросы и предложения:</div>
+                                <a href="mailto:feedback@buzzolls.ru" className="footer__contacts-value link-orange">feedback@buzzolls.ru</a>
+                            </div>
+                            <div className="footer__contacts-box">
+                                <div className="footer__contacts-name">Сотрудничество:</div>
+                                <a href="mailto:director@buzzolls.ru" className="footer__contacts-value link-orange">director@buzzolls.ru</a>
+                            </div>
+                        </div>
                     </div>
-                    <div className="footer__contacts">
-                        <h3 className="footer__title">Контакты</h3>
-                        <div className="footer__contacts-box">
-                            <div className="footer__contacts-name">Горячая линия:</div>
-                            <a href="tel:8(833)2699690" className="footer__contacts-value link-orange">8 (833) 269 96 90</a>
-                        </div>
-                        <div className="footer__contacts-box">
-                            <div className="footer__contacts-name">Вопросы и предложения:</div>
-                            <a href="mailto:feedback@buzzolls.ru" className="footer__contacts-value link-orange">feedback@buzzolls.ru</a>
-                        </div>
-                        <div className="footer__contacts-box">
-                            <div className="footer__contacts-name">Сотрудничество:</div>
-                            <a href="mailto:director@buzzolls.ru" className="footer__contacts-value link-orange">director@buzzolls.ru</a>
-                        </div>
-                    </div>
-                </div>
+                    :
+                    false
+                }
                 <div className="footer__bottom">
                     <div className="footer__logo-box">
                         <Link to={"/"} className="footer__logo">

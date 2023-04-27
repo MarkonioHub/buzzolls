@@ -1,29 +1,18 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react'
+import {useSelector, useDispatch} from "react-redux"
+import {setSlides} from "../../../../store/actions/slidesAction";
 
 import ic_slider_right_white from "../../images/ic_slider_right_white.svg"
 
 import "./slider.sass"
 
 export const SliderComp = () => {
-    const [slides, setSlides] = useState([
-        {
-            desc: "https://filestorage.buzzolls.ru/Img/Banners/04D9F5BC52F5861F11ED7DF830199AA8/04D9F5BC52F5861F11EDB7FEECE7774D.jpg",
-            tablet: "https://filestorage.buzzolls.ru/Img/Banners/04D9F5BC52F5861F11ED7DF830199AA8/04D9F5BC52F5861F11EDB7FEECE7774C.jpg",
-            mobile: "https://filestorage.buzzolls.ru/Img/Banners/04D9F5BC52F5861F11ED7DF830199AA8/04D9F5BC52F5861F11EDB7FEECE7774B.jpg"},
-        {
-            desc: "https://filestorage.buzzolls.ru/Img/Banners/04D9F5BC52F5861F11ED7DF8133B3639/04D9F5BC52F5861F11EDB7FED97AD906.jpg",
-            tablet: "https://filestorage.buzzolls.ru/Img/Banners/04D9F5BC52F5861F11ED7DF8133B3639/04D9F5BC52F5861F11EDB7FED97AD905.jpg",
-            mobile: "https://filestorage.buzzolls.ru/Img/Banners/04D9F5BC52F5861F11ED7DF8133B3639/04D9F5BC52F5861F11EDB7FED97AD904.jpg"},
-        {
-            desc: "https://filestorage.buzzolls.ru/Img/Banners/04D9F5BC52F5861E11ED2C214AC5719F/04D9F5BC52F5861F11EDB7FECD4F7A16.jpg",
-            tablet: "https://filestorage.buzzolls.ru/Img/Banners/04D9F5BC52F5861E11ED2C214AC5719F/04D9F5BC52F5861F11EDB7FECD4F7A15.jpg",
-            mobile: "https://filestorage.buzzolls.ru/Img/Banners/04D9F5BC52F5861E11ED2C214AC5719F/04D9F5BC52F5861F11EDB7FECD4F7A14.jpg"},
-        {
-            desc: "https://filestorage.buzzolls.ru/Img/Banners/04D9F5BC52F5861F11EDB8EF4BF4D323/04D9F5BC52F5861F11EDD4681DCF4AF9.jpg",
-            tablet: "https://filestorage.buzzolls.ru/Img/Banners/04D9F5BC52F5861F11EDB8EF4BF4D323/04D9F5BC52F5861F11EDD4681DCF4AF8.jpg",
-            mobile: "https://filestorage.buzzolls.ru/Img/Banners/04D9F5BC52F5861F11EDB8EF4BF4D323/04D9F5BC52F5861F11EDD4681DCF4AF7.jpg"
-        },
-    ])
+    const dispatch = useDispatch()
+    const slides = useSelector(state => state.slides.slides)
+
+    useEffect(() => {
+        if (!slides.length) dispatch(setSlides())
+    }, [])
 
     const [activeIndex, setActiveIndex] = useState(0)
 
@@ -76,7 +65,7 @@ export const SliderComp = () => {
                         <picture key={i} className={`slider__picture ${activeIndex === i ? "slider__picture_active" : false}`}>
                             <source srcSet={item.mobile} media="(max-width: 768px)"/>
                             <source srcSet={item.tablet} media="(max-width: 1024px)"/>
-                            <img src={item.desc} alt="" className="slider__image"/>
+                            <img src={item.desctop} alt="" className="slider__image"/>
                         </picture>
                     )}
                 </div>

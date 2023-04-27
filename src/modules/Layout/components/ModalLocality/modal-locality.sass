@@ -1,0 +1,56 @@
+.modal-locality
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 10000
+  display: none
+  justify-content: center
+  align-items: center
+
+.modal-locality_open
+  display: flex
+
+.modal-locality__layer
+  background-color: rgba(0,0,0,.5)
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+.modal-locality__area
+  position: relative
+  z-index: 1
+  max-width: 456px
+  width: 100%
+  padding: 20px 30px
+  background-color: #fff
+  border-radius: 8px
+  color: #000
+
+.modal-locality__title
+  margin-bottom: 10px
+  text-align: center
+  font-size: 21px
+  font-weight: 700
+
+.modal-locality__list
+
+.modal-locality__item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &:not(:last-of-type)
+    border-bottom: 1px solid #dcdcdc
+
+.modal-locality__name
+  font-size: 14px
+
+.modal-locality__link
+  display: inline-block
+  padding: 10px
+  color: #000
+  font-size: 14px
+  font-weight: 700

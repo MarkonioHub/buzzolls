@@ -7,8 +7,11 @@ import logoIcon from "../../images/logo.svg"
 import icCardWhite from "../../images/ic_card_white.svg"
 
 import "./header.sass"
+import {useSelector} from "react-redux";
 
 export const Header = () => {
+    const currentLocality = useSelector(state => state.localities.currentLocality)
+
     return (
         <div className="header">
             <div className="header__cont cont">
@@ -19,7 +22,7 @@ export const Header = () => {
                     </Link>
                     <div className="header__menu">
                         {headerMenuList.map((item,i) =>
-                            <Link key={i} to={item.link} className="header__menu-link fc_grey link-orange">{item.text}</Link>
+                            <Link key={i} to={`/${currentLocality.slug}` + item.link} className="header__menu-link fc_grey link-orange">{item.text}</Link>
                         )}
                     </div>
                     <Link to={"/"} className="header__basket">
