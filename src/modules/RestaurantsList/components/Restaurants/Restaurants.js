@@ -1,9 +1,10 @@
 import React from 'react';
+import {useSelector} from "react-redux";
 
 import "./restaurants.sass"
 
 export const Restaurants = () => {
-    const restaurants = [1,2,3,4]
+    const restaurants = useSelector(state => state.restaurants.restaurants)
 
     return (
         <section className="restaurants">
@@ -12,14 +13,12 @@ export const Restaurants = () => {
                 <div className="restaurants__list">
                     {restaurants.map((item, i) =>
                         <li key={i} className="restaurants__item">
-                            <img src="" alt="" className="restaurants__image"/>
+                            <img src={item.image} alt="" className="restaurants__image"/>
                             <div className="restaurants__box">
-                                <div className="restaurants__address">Ленина, 205</div>
-                                <div className="restaurants__work-time">10:00 - 23:00</div>
-                                <a href="tel:+78332699690" className="restaurants__phone">+78332699690</a>
-                                <div className="restaurants__description">
-                                    Ресторан находится в торговом центре Грин Хаус на 3 этаже.
-                                </div>
+                                <div className="restaurants__address">{item.address}</div>
+                                <div className="restaurants__work-time">{item.workTime}</div>
+                                <a href={`tel:${item.phone}`} className="restaurants__phone">{item.phone}</a>
+                                <div className="restaurants__description">{item.description}</div>
                             </div>
                         </li>
                     )}

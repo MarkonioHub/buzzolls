@@ -1,0 +1,60 @@
+.mobile-menu
+  position: fixed
+  z-index: 1001
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  width: 690px
+  display: flex
+  align-items: stretch
+  transform: translateX(-100%)
+  transition-property: transform
+  transition-duration: 0.3s
+  @media screen and (max-width: 950px)
+    width: 100%
+
+.mobile-menu_active
+  @media screen and (max-width: 1240px)
+    transform: translateX(0)
+    & + .mobile-menu-layer
+      display: block
+
+.mobile-menu__area
+  background-color: #fff
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+  overflow-y: auto
+  padding-bottom: 15px
+
+.mobile-menu__close
+  position: absolute
+  top: 0
+  right: 0
+  padding: 16px
+
+.mobile-menu__close-icon
+  width: 18px
+  height: 18px
+
+.mobile-menu__box
+  display: flex
+  flex-direction: column
+  border-bottom: 2px solid #000
+
+.mobile-menu__link
+  font-size: 14px
+
+.mobile-menu__link.mobile-menu__link_active
+  color: #f5551e
+
+.mobile-menu-layer
+  background-color: rgba(0,0,0,.5)
+  position: fixed
+  z-index: 1000
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: none

@@ -1,99 +1,94 @@
 export const faqContent = [
     {
-        question: `К вам опоздали?`,
+        question: `Diam quam nulla porttitor massa?`,
         answer:
-        `<p>Уважаемые гости! У нас изменилась система предоставления скидок при опоздании:</p>
+        `<p>Diam phasellus vestibulum lorem sed risus ultricies tristique nulla:</p>
         <ul>
-            <li>Более 15 минут - Скидка 15% на следующий заказ</li>
-            <li>Более 30 минут - Скидка 30% на следующий заказ</li>
+            <li>Diam phasellus vestibulum lorem sed risus</li>
+            <li>Diam phasellus vestibulum lorem sed risus</li>
         </ul>
         <p>
-            Все, что Вам нужно сделать для получения промокода - это написать
-            нам <a href="https://vk.com/im?sel=-88308987">ВКонтакте</a>, либо позвонить
-            в колл-центр по номеру 699-690 (для Кировской области) или 8 (800) 707-87-87 (для других регионов России)
-            и сообщить об опоздании в тот же день, когда Вы делали заказ.
+            Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra
+            maecenas accumsan lacus vel facilisis. Quis risus sed vulputate odio ut. Amet tellus
+            cras adipiscing enim eu turpis.
         </p>
         <p>
-            <b>Важно</b>
+            <b>Laoreet</b>
         </p>
         <p>
-            Мы оставляем за собой право отказать в предоставлении скидки за опоздание в случаях, если:
-        </p>
-        <ul>
-            <li>По указанному адресу не работает домофон и сотрудники компании не были об этом уведомлены</li>
-            <li>Курьеру не открывали дверь (входную, подъезда, на вахте, итд)</li>
-            <li>Курьера задержала охрана, консьерж</li>
-            <li>Заказ был оформлен на неточный или неверный адрес</li>
-            <li>Был оставлен неправильный контактный телефон</li>
-            <li>Никто не отвечал на звонки сотрудников компании по контактному телефону, либо контактный телефон был отключен</li>
-        </ul>
-        <p>
-            Также время доставки считается с момента приезда курьера по назначенному адресу и звонка на контактный номер телефона в случаях, когда:
+            Laoreet id donec ultrices tincidunt arcu non sodales:
         </p>
         <ul>
-            <li>По указанному адресу не работает домофон</li>
-            <li>Доставка не до двери</li>
-            <li>Доставка в административное, офисное или производственное здание</li>
-            <li>В заказе присутствует пометка перезвонить</li>
-            <li>Время доставки рассчитывается с момента первого приезда курьера</li>
+            <li>Egestas congue quisque egestas diam</li>
+            <li>Purus semper eget duis at tellus at urna condimentum</li>
+            <li>Diam quam nulla porttitor massa id neque</li>
+            <li>Sed turpis tincidunt id aliquet risus feugiat</li>
+            <li>Egestas congue quisque egestas diam</li>
+            <li>Purus semper eget duis at tellus at urna condimentum</li>
         </ul>
         <p>
-            Если курьер компании приехал с опозданием, но при этом опоздание увеличилось по вышеизложенным причинам, то промокод даётся только с учетом того времени опоздания, которое было допущено по вине компании
+           Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra maecenas accumsan lacus vel facilisis.
+       </p>
+        <ul>
+            <li>Egestas congue quisque egestas diam</li>
+            <li>Purus semper eget duis at tellus at urna condimentum</li>
+            <li>Diam quam nulla porttitor massa id neque</li>
+            <li>Sed turpis tincidunt id aliquet risus feugiat</li>
+            <li>Egestas congue quisque egestas diam</li>
+        </ul>
+        <p>
+            Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra maecenas accumsan lacus vel facilisis.
         </p>`
     }
     ,
     {
-        question: `Вам что-то не довезли?`,
+        question: `Egestas congue quisque egestas diam?`,
         answer:
         `<p>
-            Если Вы обнаружили, что Вам не привезли какое-то блюдо из заказа, то мы довезем его Вам в кратчайшие
-            сроки, либо рассмотрим другой вариант решения проблемы. Просто напишите
-            нам <a href="https://vk.com/im?sel=-88308987">ВКонтакте</a>, либо позвоните по
-            номеру 699-690 (для Кировской области) или 8 (800) 707-87-87 (для других регионов России)
+            Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra
+            maecenas accumsan lacus vel facilisis. Quis risus sed vulputate odio ut. Amet tellus
+            cras adipiscing enim eu turpis.
         </p>`
     }
     ,
     {
-        question: `Не понравилось блюдо?`,
+        question: `Purus semper eget duis at tellus?`,
         answer:
         `<p>
-            Если вам не понравилось блюдо, то мы всегда будем рады его заменить!
+            Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra
+            maecenas accumsan!
         </p>
         <p>
-            Для этого вам нужно:
+            Enim eu turpis:
         </p>
         <ul>
             <li>
-                Сообщить о некачественном блюде оператору по телефону 699-690 (для Кировской области)
-                или 8 (800) 707-87-87 (для других регионов России), либо написать
-                нам <a href="https://vk.com/im?sel=-88308987">ВКонтакте</a>
+                Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra maecenas accumsan
             </li>
-            <li>Остаток от претензионного блюда должен быть не менее 80% первоначального объема</li>
+            <li>Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra maecenas accumsan</li>
             <li>
-                Замена блюда будет произведена в самое ближайшее время с учетом времени на приготовление и на доставку,
-                в среднем в 40-60 минут
+                Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra maecenas accumsan
             </li>
-            <li>Скидка на замену блюд в случае задержки курьера не распространяется</li>
+            <li>Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra maecenas accumsan</li>
         </ul>`
     }
     ,
     {
-        question: `Перепутали заказы?`,
+        question: `Diam quam nulla porttitor massa id neque?`,
         answer:
         `<p>
-            Если Вы обнаружили, что Вам привезли не то, что Вы заказывали позвоните нам по номеру 699-690 
-            (для Кировской области) или 8 (800) 707-87-87 (для других регионов России), либо сразу пришлите нам 
-            фотографию заказа <a href="https://vk.com/im?sel=-88308987">ВКонтакте</a> и мы поменяем заказ в кратчайшие 
-            сроки, либо рассмотрим другой вариант решения проблемы
+            Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra
+            maecenas accumsan lacus vel facilisis. Quis risus sed vulputate odio ut. Amet tellus
+            cras adipiscing enim eu turpis.
         </p>`
     }
     ,
     {
-        question: `Если появились замечания.`,
+        question: `Laoreet id donec ultrices tincidunt arcu.`,
         answer:
         `<p>
-            Нам всегда важна обратная связь от наших гостей, поэтому если у Вас будут какие-то 
-            замечания или предложения, то можете написать нам <a href="https://vk.com/im?sel=-88308987">ВКонтакте</a>.
+            Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra
+            maecenas accumsan lacus vel facilisis.
         </p>`
     }
 ]

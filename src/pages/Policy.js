@@ -1,11 +1,11 @@
 import React from "react";
 import { Layout } from "../modules/Layout/index";
-import { NotFoundModule } from "../modules/NotFound/index";
+import { PolicyModule } from "../modules/Policy/index";
 
 const NotFound = () => {
     return (
         <Layout>
-            <NotFoundModule/>
+            <PolicyModule/>
         </Layout>
     );
 };

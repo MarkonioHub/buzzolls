@@ -1,24 +1,29 @@
-import React, {useState} from 'react';
-import {Link} from "react-router-dom";
+import React, {Fragment} from 'react'
+import {Link} from "react-router-dom"
+import {useSelector} from "react-redux"
 
 import "./our-menu.sass"
 
 export const OurMenuComp = () => {
-    const [menu, setMenu] = useState([
-        {name: 'Сеты'},{name: 'Роллы'},{name: 'Суши и гунканы'},{name: 'Гарниры'},{name: 'Десерты'},
-        {name: 'Салаты'},{name: 'Воки'},{name: 'Для детей'},{name: 'Другие товары'}
-    ])
+    const categories = useSelector(state => state.categories.categories)
+    const currentLocality = useSelector(state => state.localities.currentLocality)
 
     return (
         <section className="our-menu">
             <div className="our-menu__cont cont">
                 <h2 className="our-menu__title h2">НАШЕ МЕНЮ</h2>
                 <div className="our-menu__list">
-                    {menu.map((item, i) =>
-                        <Link key={i} to={"/"} className="our-menu__link">
-                            <img src="https://buzzolls.ru/static/media/combo.c7880fe0.png" alt="" className="our-menu__image"/>
-                            <div className="our-menu__name">{item.name}</div>
-                        </Link>
+                    {categories.map((item, i) =>
+                        <Fragment key={i}>
+                            {item.image ?
+                                <Link to={`/${currentLocality.slug}/menu/${item.slug}`} className="our-menu__link">
+                                    <img src={item.image} alt="" className="our-menu__image"/>
+                                    <div className="our-menu__name">{item.name}</div>
+                                </Link>
+                                :
+                                false
+                            }
+                        </Fragment>
                     )}
                 </div>
             </div>

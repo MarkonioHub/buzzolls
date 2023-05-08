@@ -1,5 +1,5 @@
-import React from 'react'
-import {Link} from "react-router-dom"
+import React, {useEffect} from 'react'
+import {Link, useLocation} from "react-router-dom"
 import {useDispatch, useSelector} from "react-redux";
 import {setIsLocalitiesModalOpen} from "../../../../store/actions/localitiesAction";
 import {isObjectEmpty} from "../../../../helpers/isObjectEmpty"
@@ -8,7 +8,12 @@ import './header-top.sass'
 
 export const HeaderTop = () => {
     const dispatch = useDispatch()
+    const location = useLocation()
     const currentLocality = useSelector(state => state.localities.currentLocality)
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    },[location])
 
     return (
         <div className="header-top">
@@ -25,7 +30,7 @@ export const HeaderTop = () => {
                     {currentLocality.phone ?
                         <a href={`tel:${currentLocality.phone}`} className="header-top__phone fc_grey link-orange">{currentLocality.phone}</a>
                         :
-                        <a href={`tel:88332699690`} className="header-top__phone fc_grey link-orange">8 (833) 269 96 90</a>
+                        false
                     }
                     <div className="header-top__work-time fc_grey">ежедневно с 10:00 до 23:00</div>
                     <Link to={"/"} className="header-top__sign-in">

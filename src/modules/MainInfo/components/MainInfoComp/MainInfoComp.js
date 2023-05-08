@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import ButtonOrange from '../../../../UI/buttons/ButtonOrange/ButtonOrange'
+import ButtonOrange from '../../../../UI/ButtonOrange/ButtonOrange'
 
 import "./main-info.sass"
 
@@ -13,76 +13,77 @@ export const MainInfoComp = () => {
                     <div className="content">
                         <h3>ДОСТАВКА РОЛЛОВ</h3>
                         <p>
-                            Роллы давно стали неотъемлемой частью нашего стола. Это блюдо получится действительно
-                            вкусным, если готовить его с учётом технологии и с любовью. Вы можете заказать роллы
-                            на День Рождения, 8 марта, Новый год, 23 февраля, просто на обед и ужин. Они украсят
-                            любой стол и подарят истинное наслаждение всем любителям японской кухни. Для именинников
-                            действует скидка 10% (при предъявлении паспорта)!
+                            Diam quam nulla porttitor massa. Diam phasellus vestibulum lorem sed risus ultricies
+                            tristique nulla. Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra
+                            maecenas accumsan lacus vel facilisis. Quis risus sed vulputate odio ut. Amet tellus
+                            cras adipiscing enim eu turpis. Egestas congue quisque egestas diam. Purus semper eget
+                            duis at tellus at urna condimentum. Diam quam nulla porttitor massa id neque aliquam
+                            vestibulum morbi. Sed turpis tincidunt id aliquet risus feugiat. Sed euismod nisi porta
+                            lorem mollis.
                         </p>
                         <p>
-                            В нашем меню есть роллы на самый взыскательный вкус: запечённые, с рыбой, курицей, овощами,
-                            изумительной шапочкой соуса. Мы всегда готовы радовать вас вкусными роллами.
-                            Ознакомиться с полным ассортиментом роллов и заказать доставку можно на нашем сайте
+                            Diam quam nulla porttitor massa. Diam phasellus vestibulum lorem sed risus ultricies
+                            tristique nulla. Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra
+                            maecenas accumsan lacus vel facilisis.
                         </p>
                         <p>
-                            Хотите отдохнуть от готовки? Доставка роллов — отличный вариант обеда или ужина для всей
-                            семьи. Вы можете изменить любой сет роллов, выбирая любимые вкусы с помощью
-                            удобного конструктора!
+                            Diam quam nulla porttitor massa. Diam phasellus vestibulum lorem sed risus ultricies
+                            tristique nulla. Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra
+                            maecenas accumsan lacus vel facilisis.
                         </p>
                         <h3>ЗАКАЗАТЬ РОЛЛЫ — В BUZZOLLS!</h3>
                         <p>
-                            Нам доверяют более 100.000 клиентов — это лучшая похвала для нас! Нас выбирают по ряду причин.
+                            Velit ut tortor pretium viverra suspendisse. Ultrices sagittis orci a scelerisque purus
+                            semper eget duis. Turpis egestas sed tempus urna.
                         </p>
                         <ul>
-                            <li>Работаем с 2015 года — выстроили работающую систему</li>
-                            <li>Богатый выбор роллов на любой вкус — удобно заказывать на большую компанию</li>
-                            <li>Приятные цены — можно заказывать роллы чаще</li>
-                            <li>Свежие продукты высокого качества — работаем напрямую с поставщиками</li>
-                            <li>Расчёт КБЖУ — must have для тех, кто следит за фигурой</li>
-                            <li>Контроль качества блюд на всех этапах готовки — гарантия качества каждого блюда</li>
-                            <li>Тысячи положительных отзывов — качество, которому доверяют</li>
-                            <li>Скидки, специальные предложения, розыгрыши подарков — порадуйте себя</li>
-                            <li>Периодическое обновление меню — стремимся к разнообразию</li>
-                            <li>Душевное обслуживание — нам важно, чтобы каждый клиент остался доволен</li>
+                            <li>Ultrices sagittis orci a scelerisque purus semper eget duis. Turpis egestas sed tempus urna.</li>
+                            <li>Diam quam nulla porttitor massa.</li>
+                            <li>Velit ut tortor pretium viverra suspendisse.</li>
+                            <li>Ultrices sagittis orci a scelerisque purus semper eget duis. Turpis egestas sed tempus urna.</li>
+                            <li>Diam quam nulla porttitor massa.</li>
+                            <li>Velit ut tortor pretium viverra suspendisse.</li>
+                            <li>Ultrices sagittis orci a scelerisque purus semper eget duis. Turpis egestas sed tempus urna.</li>
+                            <li>Diam quam nulla porttitor massa.</li>
+                            <li>Velit ut tortor pretium viverra suspendisse.</li>
+                            <li>Ultrices sagittis orci a scelerisque purus semper eget duis. Turpis egestas sed tempus urna.</li>
+                            <li>Diam quam nulla porttitor massa.</li>
+                            <li>Velit ut tortor pretium viverra suspendisse.</li>
                         </ul>
                         <p>
-                            Мы уделяем пристальное внимание качеству продуктов, следим за приготовлением роллов,
-                            качеством конечного продукта и за перевозкой продуктов. Они доставляются в рефрижераторе
-                            под определенной температурой. При получении проходят обязательную проверку на качество и
-                            необходимую температуру. Мы стараемся учитывать все ваши пожелания, чтобы вы могли
-                            наслаждаться нашими роллами.
+                            Velit ut tortor pretium viverra suspendisse. Ultrices sagittis orci a scelerisque purus
+                            semper eget duis. Turpis egestas sed tempus urna.
                         </p>
                         <p>
-                            Вы можете получить целый сет в подарок — это возможно! Подпишитесь на нас в социальных
-                            сетях и следите за новостями, мы регулярно проводим розыгрыши сетов роллов и предлагаем
-                            интересные акции. Будьте с нами и узнавайте новости первыми!
+                            Diam quam nulla porttitor massa. Diam phasellus vestibulum lorem sed risus ultricies
+                            tristique nulla. Laoreet id donec ultrices tincidunt arcu non sodales. Commodo viverra
+                            maecenas accumsan lacus vel facilisis.
                         </p>
                         <h3>ДОСТАВКА ЕДЫ</h3>
                         <p>
-                            Мы принимаем заказы ежедневно и делаем доставку еды в строго оговорённое время.
-                            Нужна доставка еды к определённому времени? Заказ будет на вашем столе в нужный момент,
-                            нужно лишь указать время.
+                            Velit ut tortor pretium viverra suspendisse. Ultrices sagittis orci a scelerisque purus
+                            semper eget duis. Turpis egestas sed tempus urna.
                         </p>
-                        <p>В меню вы найдёте</p>
+                        <p>Velit ut tortor:</p>
                         <ul>
-                            <li>готовые сеты</li>
-                            <li>суши</li>
-                            <li>салаты</li>
-                            <li>гарниры</li>
-                            <li>десерты</li>
-                            <li>напитки</li>
+                            <li>velit ut tortor</li>
+                            <li>pretium viverra</li>
+                            <li>suspendisse</li>
+                            <li>sagittis</li>
+                            <li>eget</li>
+                            <li>semper</li>
                         </ul>
                         <p>
-                            У нас есть приложение, с помощью которого заказать доставку еды просто, быстро и удобно!
-                            Вы оформляете заказ — он в режиме онлайн появляется на кухне — мы экономим ваше время.
+                            Velit ut tortor pretium viverra suspendisse. Ultrices sagittis orci a scelerisque purus
+                            semper eget duis. Turpis egestas sed tempus urna.
                         </p>
                         <p>
-                            Предпочитаете отдыхать вне дома? Будем рады видеть вас в наших кафе по всем адресам города
-                            (список адресов можно посмотреть на сайте). Вам нужно лишь выбрать удобный адрес и
-                            приехать — остальное сделаем мы!
+                            Diam quam nulla porttitor massa. Diam phasellus vestibulum lorem sed risus ultricies
+                            tristique nulla.
                         </p>
                         <p>
-                            Чтобы заказать вкусные роллы, повод не нужен. Роллы — это BUZZOLLS!
+                            Diam quam nulla porttitor massa. Diam phasellus vestibulum lorem sed risus ultricies
+                            tristique nulla.
                         </p>
                     </div>
                 </div>
