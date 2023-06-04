@@ -1,6 +1,6 @@
 import React, {useCallback, useEffect, useState} from 'react'
 import {useSelector, useDispatch} from "react-redux"
-import {setSlides} from "../../../../store/actions/slidesAction";
+import {setSlides} from "../../../../store/actions/slidesAction"
 
 import ic_slider_right_white from "../../images/ic_slider_right_white.svg"
 
