@@ -13,17 +13,16 @@ const MenuDropdown = ({ list, parent }) => {
     const [isDropdownActive, setIsDropdownActive] = useState(path.includes(parent.slug))
 
     function toggleDropdown (e) {
-        //if (!e.target.classList.contains('menu-dropdown__name'))
-        setIsDropdownActive(!isDropdownActive)
+        if (!e.target.classList.contains('menu-dropdown__name')) setIsDropdownActive(!isDropdownActive)
     }
 
     return (
-        <Link to={`/${currentLocality.slug}/menu/${parent.slug}`} className={isDropdownActive ? "menu-dropdown menu-dropdown_active" : "menu-dropdown"}>
+        <div className={isDropdownActive ? "menu-dropdown menu-dropdown_active" : "menu-dropdown"}>
             <div className="menu-dropdown__box-name" onClick={toggleDropdown}>
-                <div
+                <Link to={`/${currentLocality.slug}/menu/${parent.slug}`}
                       className={"menu-dropdown__name link-orange"}>
                     {parent.name}
-                </div>
+                </Link>
             </div>
             <div className="menu-dropdown__list">
                 {list.map(item =>
@@ -33,7 +32,7 @@ const MenuDropdown = ({ list, parent }) => {
                     </Link>
                 )}
             </div>
-        </Link>
+        </div>
     );
 };
 

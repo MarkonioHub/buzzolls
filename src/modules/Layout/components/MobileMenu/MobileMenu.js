@@ -41,7 +41,7 @@ export const MobileMenu = () => {
                     </button>
                     {footerMenuList.map((item, i) =>
                         <Fragment key={i}>
-                            <Link to={`/${currentLocality.slug}/` + item.link}
+                            <Link to={`/${currentLocality.slug}` + item.link}
                                   className={lastUrlSlug === item.link ? "mobile-menu__link mobile-menu__link_active menu-link fc_grey link-orange" : "mobile-menu__link menu-link fc_grey link-orange"}>
                                 {item.text}
                             </Link>
