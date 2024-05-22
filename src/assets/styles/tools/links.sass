@@ -1,0 +1,24 @@
+@mixin link
+  transition-duration: 0.3s
+  transition-property: color
+
+.link-orange
+  +link
+  &:hover
+    color: $orange
+
+.link-grey
+  +link
+  color: $grey
+  text-decoration: none
+  &:hover
+    color: $dark
+
+.link-grey.active
+  color: $orange
+
+.link-opacity-hover
+  transition-property: opacity
+  transition-duration: 0.3s
+  &:hover
+    opacity: 0.7
