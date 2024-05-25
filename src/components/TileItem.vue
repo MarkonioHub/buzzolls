@@ -17,7 +17,7 @@
         <div class="tile-item__area">
             <div class="tile-item__desc">{{ this.product.description }}</div>
             <UI_ButtonBorderOrange class="tile-item__button" @click="addProductInBasket">
-                Добавить за {{ formatPrice(this.product.price) }}
+                Добавить за {{ _formatPrice(this.product.price) }}
             </UI_ButtonBorderOrange>
         </div>
     </div>

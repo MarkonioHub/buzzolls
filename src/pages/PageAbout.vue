@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import SectionAbout from "@/modules/SectionAbout"
+    import SectionAbout from "@/templates/SectionAbout"
 
     export default {
         name: "PageAbout",

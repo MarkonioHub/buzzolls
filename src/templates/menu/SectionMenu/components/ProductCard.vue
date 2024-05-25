@@ -32,7 +32,7 @@
                     <div class="product-card__nutritional-value" v-html="item.nutritional_value"></div>
                 </div>
                 <UI_ButtonBorderOrange class="product-card__button" @click="addProductInBasket">
-                    {{ `Добавить за ${formatPrice(item.price)}` }}
+                    {{ `Добавить за ${_formatPrice(item.price)}` }}
                 </UI_ButtonBorderOrange>
             </div>
         </div>

@@ -46,10 +46,10 @@
             },
             checkForm(e) {
                 e.preventDefault()
-                const FormData = this.validateForm(this.form)
+                const FormData = this._validateForm(this.form)
                 if (FormData) {
                     const jsonData = JSON.stringify(FormData)
-                    this.sendForm('/api/auth', jsonData)
+                    this._sendForm('/api/auth', jsonData)
                     alert('send data:' + jsonData)
                 }
             }

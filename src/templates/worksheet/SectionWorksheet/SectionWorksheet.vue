@@ -23,11 +23,11 @@
 </template>
 
 <script>
-    import WorksheetSidebar from "@/modules/worksheet/WorksheetSidebar"
+    import WorksheetSidebar from "@/templates/worksheet/SectionWorksheet/components/WorksheetSidebar"
     import VacanciesCard from "@/components/VacanciesCard"
-    import WorksheetInfo from "@/modules/worksheet/WorksheetInfo"
-    import WorksheetCard from "@/modules/worksheet/WorksheetCard"
-    import JobForm from "@/modules/worksheet/JobForm"
+    import WorksheetInfo from "@/templates/worksheet/SectionWorksheet/components/WorksheetInfo"
+    import WorksheetCard from "@/templates/worksheet/SectionWorksheet/components/WorksheetCard"
+    import JobForm from "@/templates/worksheet/SectionWorksheet/components/JobForm"
 
     import { toRaw } from "@vue/reactivity"
 

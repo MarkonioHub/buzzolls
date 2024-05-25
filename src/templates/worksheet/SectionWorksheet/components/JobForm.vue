@@ -107,12 +107,12 @@
             },
             checkForm(e) {
                 e.preventDefault()
-                const FormData = this.validateForm(this.form, this.$refs)
+                const FormData = this._validateForm(this.form, this.$refs)
                 if (FormData) {
                     FormData.vacancyName = this.vacancyName
                     const jsonData = JSON.stringify(FormData)
                     this.isSubmit = true
-                    this.sendForm('/api/job', jsonData)
+                    this._sendForm('/api/job', jsonData)
                 }
             }
         }

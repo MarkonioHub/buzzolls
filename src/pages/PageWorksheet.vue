@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import SectionWorksheet from "@/modules/worksheet/SectionWorksheet"
+    import SectionWorksheet from "@/templates/worksheet/SectionWorksheet/SectionWorksheet"
 
     export default {
         name: "PageWorksheet",

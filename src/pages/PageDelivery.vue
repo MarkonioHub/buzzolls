@@ -6,7 +6,7 @@
 </template>
 
 <script>
-    import SectionDelivery from "@/modules/SectionDelivery"
+    import SectionDelivery from "@/templates/SectionDelivery"
     import ModalMap from "@/components/modals/ModalMap"
 
     export default {

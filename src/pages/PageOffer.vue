@@ -6,7 +6,7 @@
 </template>
 
 <script>
-    import SectionOffer from "@/modules/SectionOffer"
+    import SectionOffer from "@/templates/SectionOffer"
     import ModalOffer from "@/components/modals/ModalOffer"
 
     export default {

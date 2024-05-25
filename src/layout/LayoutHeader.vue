@@ -16,7 +16,7 @@
                     </ul>
                 </nav>
                 <RouterLink to="/basket" class="header__basket">
-                    <span class="header__basket-value">{{ formatPrice(basketPrice) }}</span>
+                    <span class="header__basket-value">{{ _formatPrice(basketPrice) }}</span>
                 </RouterLink>
                 <button class="header__burger" @click="openModalMenu">
                     <img src="@/assets/images/burger.svg" alt="" class="header__burger-icon">

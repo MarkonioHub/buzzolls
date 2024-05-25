@@ -8,7 +8,7 @@
             <div class="basket-card__size" v-if="product.size">{{ product.size }}</div>
         </div>
         <div class="basket-card__price-box">
-            <div class="basket-card__price">{{ formatPrice(product.price) }}</div>
+            <div class="basket-card__price">{{ _formatPrice(product.price) }}</div>
         </div>
         <div class="basket-card__counter">
             <button class="basket-card__counter-btn basket-card__counter-btn_minus" v-if="product.count > 1"

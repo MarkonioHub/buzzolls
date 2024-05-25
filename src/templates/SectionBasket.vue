@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="basket__result">
-                <div class="basket__result-text">Сумма заказа: <b>{{ formatPrice(basketPrice) }}</b></div>
+                <div class="basket__result-text">Сумма заказа: <b>{{ _formatPrice(basketPrice) }}</b></div>
                 <UI_ButtonBorderOrange class="basket__result-button" @click="openModalAuth">Оформить заказ</UI_ButtonBorderOrange>
             </div>
         </div>

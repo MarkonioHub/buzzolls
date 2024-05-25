@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import SectionMenu from "@/modules/menu/SectionMenu"
+    import SectionMenu from "@/templates/menu/SectionMenu/SectionMenu"
 
     export default {
         name: "PageMenu",

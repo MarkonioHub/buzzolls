@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import SectionPolicy from "@/modules/SectionPolicy"
+    import SectionPolicy from "@/templates/SectionPolicy"
 
     export default {
         name: "PagePolicy",

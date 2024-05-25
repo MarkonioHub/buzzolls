@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import SectionRestaurants from "@/modules/SectionRestaurants"
+    import SectionRestaurants from "@/templates/SectionRestaurants"
 
     export default {
         name: "PageRestaurants",

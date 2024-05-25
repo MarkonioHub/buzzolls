@@ -7,7 +7,7 @@
                 <div class="recommend-card__name">{{ product.name }}</div>
                 <div class="recommend-card__size" v-if="product.size">{{ product.size }}</div>
                 <UI_ButtonBorderOrange class="recommend-card__button" @click="addProductInBasket">
-                    Добавить за {{ formatPrice(product.price) }}
+                    Добавить за {{ _formatPrice(product.price) }}
                 </UI_ButtonBorderOrange>
             </div>
         </div>

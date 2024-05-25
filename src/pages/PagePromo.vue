@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import SectionPromo from "@/modules/SectionPromo"
+    import SectionPromo from "@/templates/SectionPromo"
 
     export default {
         name: "PageActions",

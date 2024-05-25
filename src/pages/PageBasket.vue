@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import SectionBasket from "@/modules/SectionBasket"
+    import SectionBasket from "@/templates/SectionBasket"
 
     export default {
         name: "PageBasket",

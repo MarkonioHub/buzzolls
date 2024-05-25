@@ -2,7 +2,7 @@ import { toRaw } from "@vue/reactivity"
 
 export const Form = {
     methods: {
-        sendForm(URL, data) {
+        _sendForm(URL, data) {
             fetch(URL, { method: "POST", body: data })
                 .then(function(res) { return res })
                 .then(function() {})
@@ -10,7 +10,7 @@ export const Form = {
                     console.log(error)
                 })
         },
-        validateForm(formObject, refs) {
+        _validateForm(formObject, refs) {
             let isValid = true
             initValidate()
             if (isValid) return returnFormData()

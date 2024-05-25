@@ -15,8 +15,8 @@
 </template>
 
 <script>
-    import MenuTile from "@/modules/menu/components/MenuTile"
-    import ProductCard from "@/modules/menu/components/ProductCard"
+    import MenuTile from "@/templates/menu/SectionMenu/components/MenuTile"
+    import ProductCard from "@/templates/menu/SectionMenu/components/ProductCard"
     import LayoutSidebar from '@/layout/LayoutSidebar.vue'
 
     export default {

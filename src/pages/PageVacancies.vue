@@ -7,11 +7,11 @@
 </template>
 
 <script>
-    import SectionVacanciesCap from "@/modules/vacancies/SectionVacanciesCap"
-    import SectionVacanciesSlider from "@/modules/vacancies/SectionVacanciesSlider"
-    import SectionWorkInBuzzolls from "@/modules/vacancies/SectionWorkInBuzzolls"
-    import SectionBuzzollsInfo from "@/modules/vacancies/SectionBuzzollsInfo"
-    import SectionReviews from "@/modules/vacancies/SectionReviews"
+    import SectionVacanciesCap from "@/templates/vacancies/SectionVacanciesCap"
+    import SectionVacanciesSlider from "@/templates/vacancies/SectionVacanciesSlider"
+    import SectionWorkInBuzzolls from "@/templates/vacancies/SectionWorkInBuzzolls"
+    import SectionBuzzollsInfo from "@/templates/vacancies/SectionBuzzollsInfo"
+    import SectionReviews from "@/templates/vacancies/SectionReviews"
 
     export default {
         name: "PageVacanсies",
